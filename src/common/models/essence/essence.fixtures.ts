@@ -53,7 +53,7 @@ const defaultEssence: EssenceValue = {
   dataCube: customClientCube("essence-fixture-data-cube", "essence-fixture-data-cube"),
   visualization: null,
   visualizationSettings: null,
-  timezone: Timezone.UTC,
+  timezone: new Timezone("Asia/Kolkata"),
   pinnedDimensions: OrderedSet([]),
   filter: new Filter({
     clauses: List([

@@ -55,7 +55,7 @@ const defaults: EssenceOptions = {
   pinnedDimensions: OrderedSet(["string_a"]),
   pinnedSort: "count",
   timeShift: TimeShift.empty(),
-  timezone: Timezone.UTC,
+  timezone: new Timezone("Asia/Kolkata"),
   visualization: TOTALS_MANIFEST,
   visualizationSettings: null
 };

@@ -134,7 +134,6 @@ export class ShareMenu extends React.Component<ShareMenuProps> {
       onClose={onClose}
     >
       <ul className="bubble-list">
-        {linkItems(this.props)}
         {exportItems({ ...this.props, getDataset })}
         {externalViewItems(this.props)}
       </ul>

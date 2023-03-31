@@ -154,9 +154,7 @@ export class SideDrawer extends React.Component<SideDrawerProps, SideDrawerState
   render() {
     return <div className="side-drawer">
       {this.renderNavLogo()}
-      {this.renderHomeLink()}
       {this.renderDataCubes()}
-      <NavList navLinks={[this.infoLink()]} />
     </div>;
   }
 }

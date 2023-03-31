@@ -101,7 +101,7 @@ const defaultEssence: EssenceValue = {
   dataCube: null,
   visualization: null,
   visualizationSettings: null,
-  timezone: Timezone.UTC,
+  timezone: new Timezone("Asia/Kolkata"),
   filter: null,
   splits: null,
   series: null,

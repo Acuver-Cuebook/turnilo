@@ -67,7 +67,7 @@ import { attachExternalExecutor, QueryableDataCube } from "./queryable-data-cube
 
 export const DEFAULT_INTROSPECTION: Introspection = "autofill-all";
 const INTROSPECTION_VALUES = new Set(["none", "no-autofill", "autofill-dimensions-only", "autofill-measures-only", "autofill-all"]);
-export const DEFAULT_DEFAULT_TIMEZONE = Timezone.UTC;
+export const DEFAULT_DEFAULT_TIMEZONE = new Timezone("Asia/Kolkata");
 const DEFAULT_DEFAULT_FILTER = EMPTY_FILTER;
 const DEFAULT_DEFAULT_SPLITS = EMPTY_SPLITS;
 export const DEFAULT_DEFAULT_DURATION = Duration.fromJS("P1D");
