@@ -108,7 +108,7 @@ export function addAttributes(dataCube: DataCube, newAttributes: Attributes): Da
 
         if (!maker){
           expression = $(name);
-          if (this.getDimensionByExpression(expression)) continue;
+          if (findDimensionByExpression(dataCube.dimensions, expression)) continue;
           dimensions = dimensionAppend(createDimension("number", urlSafeName, expression, true), dimensions);
         }
         else {
