@@ -1,0 +1,1 @@
+{"version":3,"file":"loader.js","sourceRoot":"","sources":["../../../../src/client/components/loader/loader.tsx"],"names":[],"mappings":";;;;;AAiBA,kDAA0B;AAC1B,mDAA+C;AAC/C,yBAAuB;AAQvB,MAAa,MAAO,SAAQ,eAAK,CAAC,SAAmC;IAEnE,MAAM;QACJ,OAAO,uCAAK,SAAS,EAAC,QAAQ;YAC5B,8BAAC,kBAAO,IAAC,GAAG,EAAE,OAAO,CAAC,6BAA6B,CAAC,GAAI,CACpD,CAAC;IACT,CAAC;CACF;AAPD,wBAOC"}

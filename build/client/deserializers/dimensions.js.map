@@ -1,0 +1,1 @@
+{"version":3,"file":"dimensions.js","sourceRoot":"","sources":["../../../src/client/deserializers/dimensions.ts"],"names":[],"mappings":";;AAiBA,6DAA6D;AAC7D,2CAAkE;AAElE,SAAgB,WAAW,CAAC,EAAE,IAAI,EAAE,MAAM,EAAwB;IAChE,OAAO;QACL,IAAI;QACJ,MAAM,EAAE,kBAAS,CAAC,MAAM,EAAE,uBAAoB,CAAC;KAChD,CAAC;AACJ,CAAC;AALD,kCAKC"}
