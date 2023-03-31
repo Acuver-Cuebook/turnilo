@@ -62,7 +62,7 @@ export function addAttributes(dataCube: DataCube, newAttributes: Attributes): Da
   const $main = $("main");
 
   for (const newAttribute of newAttributes) {
-    const { name, type, nativeType } = newAttribute;
+    const { name, type, nativeType, maker } = newAttribute;
 
     // Already exists as a current attribute
     if (attributes && NamedArray.findByName(attributes, name)) continue;
@@ -106,13 +106,20 @@ export function addAttributes(dataCube: DataCube, newAttributes: Attributes): Da
       case "NULL":
         if (!autofillMeasures) continue;
 
-        const newMeasures = measuresFromAttributeInfo(newAttribute);
-        newMeasures.forEach(newMeasure => {
-          if (findMeasureByExpression(dataCube.measures, newMeasure.expression)) return;
-          measures = (name === "count")
-            ? measurePrepend(measures, newMeasure)
-            : measureAppend(measures, newMeasure);
-        });
+        if (!maker){
+          expression = $(name);
+          if (this.getDimensionByExpression(expression)) continue;
+          dimensions = dimensionAppend(createDimension("number", urlSafeName, expression, true), dimensions);
+        }
+        else {
+          const newMeasures = measuresFromAttributeInfo(newAttribute);
+          newMeasures.forEach(newMeasure => {
+            if (findMeasureByExpression(dataCube.measures, newMeasure.expression)) return;
+            measures = (name === "count")
+              ? measurePrepend(measures, newMeasure)
+              : measureAppend(measures, newMeasure);
+          });
+        }
         break;
 
       default:
